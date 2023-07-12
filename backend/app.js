@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const { errors } = require('celebrate');
+const corsHandling = require('./middlewares/corsHandling');
 const indexRouter = require('./routes/index');
 const errorHandler = require('./middlewares/errorHandler');
 const { reqLogger, errLogger } = require('./middlewares/logger');
@@ -11,12 +12,8 @@ mongoose.connect(DB_URL);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://mesto-ghostmodd.nomoredomains.work/sign-up');
-  res.header('Access-Control-Allow-Methods', 'GET,HEAD,PUT,PATCH,POST,DELETE');
-  next();
-});
 app.use(reqLogger);
+app.use(corsHandling);
 app.use('/', indexRouter);
 app.use(errLogger);
 app.use(errors());
