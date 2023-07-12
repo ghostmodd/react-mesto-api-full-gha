@@ -6,7 +6,7 @@ const errorHandler = require('./middlewares/errorHandler');
 const { reqLogger, errLogger } = require('./middlewares/logger');
 
 const app = express();
-const { PORT = 3001, DB_URL = 'mongodb://127.0.0.1:27017/mestodb' } = process.env;
+const { PORT = 3000, DB_URL = 'mongodb://127.0.0.1:27017/mestodb' } = process.env;
 mongoose.connect(DB_URL);
 
 app.use(express.json());
@@ -16,7 +16,7 @@ app.use((req, res, next) => {
   next();
 });
 app.use(reqLogger);
-app.use('/', indexRouter);
+app.use('/api', indexRouter);
 app.use(errLogger);
 app.use(errors());
 app.use(errorHandler);
