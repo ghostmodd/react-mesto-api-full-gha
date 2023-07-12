@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.070b9608.css",
+    "main.js": "/static/js/main.10ce3c4b.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Inter-Medium.otf": "/static/media/Inter-Medium.16eda82a3c37a6edda09.otf",
+    "static/media/Inter-Black.otf": "/static/media/Inter-Black.b2a2b192860f79c0b89c.otf",
+    "static/media/Inter-Regular.otf": "/static/media/Inter-Regular.a416f4674fad5f019461.otf",
+    "static/media/header__logo.svg": "/static/media/header__logo.03b78ada3425e9132ff3db7ea8f4a6f6.svg",
+    "static/media/cards__btn-like-card.svg": "/static/media/cards__btn-like-card.87ed371465c7a6a1cd01.svg",
+    "index.html": "/index.html",
+    "static/media/popup__failure-notification.svg": "/static/media/popup__failure-notification.df8eddf661ff88f2d0ef.svg",
+    "static/media/card__btn-delete-card.svg": "/static/media/card__btn-delete-card.823b0cf1b0b7e9cb7cad.svg",
+    "static/media/popup__successful-notification.svg": "/static/media/popup__successful-notification.1b6082f862eac35e2514.svg",
+    "static/media/cards__btn-like-card_activated.svg": "/static/media/cards__btn-like-card_activated.fe17a515669479b1e649.svg",
+    "static/media/form__btn-close.svg": "/static/media/form__btn-close.ad98de32e342afafa118.svg",
+    "static/media/profile__btn-edit-profile@640px.svg": "/static/media/profile__btn-edit-profile@640px.ff0fcb318a3974db48d1.svg",
+    "static/media/profile__btn-edit-profile.svg": "/static/media/profile__btn-edit-profile.8667ac4a523e8fc42e59.svg",
+    "static/media/profile__btn-change-avatar.svg": "/static/media/profile__btn-change-avatar.a086f758840ae814ecde.svg",
+    "static/media/profile__btn-add-card.svg": "/static/media/profile__btn-add-card.d86bb2edc2f6eadb96b7.svg",
+    "static/media/profile__btn-add-cards@640px.svg": "/static/media/profile__btn-add-cards@640px.54b1426515811a15ebaf.svg",
+    "static/media/form__btn-close@640px.svg": "/static/media/form__btn-close@640px.b793e07c3f4c19e26c11.svg",
+    "main.070b9608.css.map": "/static/css/main.070b9608.css.map",
+    "main.10ce3c4b.js.map": "/static/js/main.10ce3c4b.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.070b9608.css",
+    "static/js/main.10ce3c4b.js"
+  ]
+}
