@@ -12,7 +12,7 @@ mongoose.connect(DB_URL);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://mesto-ghostmodd.nomoredomains.work');
+  res.header('Access-Control-Allow-Origin', 'https://mesto-ghostmodd.nomoredomains.work/sign-up');
   res.header('Access-Control-Allow-Methods', 'GET,HEAD,PUT,PATCH,POST,DELETE');
   next();
 });
