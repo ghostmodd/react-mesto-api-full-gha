@@ -12,11 +12,11 @@ mongoose.connect(DB_URL);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Origin', 'https://mesto-ghostmodd.nomoredomains.work');
   next();
 });
 app.use(reqLogger);
-app.use('/api', indexRouter);
+app.use('/', indexRouter);
 app.use(errLogger);
 app.use(errors());
 app.use(errorHandler);
