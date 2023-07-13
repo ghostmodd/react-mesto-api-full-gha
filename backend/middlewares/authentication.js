@@ -3,6 +3,7 @@ const UnauthorizedError = require('../errors/UnauthorizedError');
 
 function authentication(req, res, next) {
   const { authorization } = req.body;
+  console.log(authorization);
 
   if (!authorization || !authorization.startsWith('Bearer: ')) {
     return next(new UnauthorizedError('Ошибка: токен не передан!'));
