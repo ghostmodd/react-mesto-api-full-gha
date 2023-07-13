@@ -91,8 +91,6 @@ function updateUserInfo(req, res, next) {
   const { name, about } = req.body;
   const userId = req.user._id;
 
-  console.log(req);
-
   User.findByIdAndUpdate(
     userId,
     {

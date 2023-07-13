@@ -18,8 +18,10 @@ function getAllCards(req, res, next) {
 
 function createCard(req, res, next) {
   const { name, link } = req.body;
+
   const owner = req.user._id;
   Card.create({ name, link, owner })
+    .then((createdCard) => createdCard.populate('owner'))
     .then((newCardData) => {
       res.send({
         newCardData,
@@ -75,6 +77,7 @@ function likeCard(req, res, next) {
     { $addToSet: { likes: userId } },
     { new: true },
   )
+    .populate('owner')
     .then((result) => {
       if (result) {
         return res.send(result);
@@ -100,6 +103,7 @@ function dislikeCard(req, res, next) {
     { $pull: { likes: userId } },
     { new: true },
   )
+    .populate('owner')
     .then((result) => {
       if (result) {
         return res.send(result);

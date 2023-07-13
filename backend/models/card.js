@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
 
-const urlRegexp = /^https?:\/\/[0-9a-z\-._~:/?#[\]@!$&'()*+,;=]{5,}$/gm;
-
 const cardSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -14,7 +12,7 @@ const cardSchema = new mongoose.Schema({
     required: true,
     validate: {
       validator(url) {
-        return !urlRegexp.test(url);
+        return /^https?:\/\/[0-9a-zA-Z/\-._~:?#[\]@!$&'()*+,;=]{5,}$/gm.test(url);
       },
     },
   },
