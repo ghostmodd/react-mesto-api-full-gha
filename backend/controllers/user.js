@@ -90,6 +90,7 @@ function createUser(req, res, next) {
 function updateUserInfo(req, res, next) {
   const { name, about } = req.body;
   const userId = req.user._id;
+  console.log(userId, name, about);
 
   User.findByIdAndUpdate(
     userId,
@@ -103,6 +104,7 @@ function updateUserInfo(req, res, next) {
     },
   )
     .then((result) => {
+      console.log(result);
       res.send(result);
     })
     .catch((err) => {
